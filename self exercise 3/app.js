@@ -9,11 +9,11 @@
     { name: "yoav", age: 45 },
   ];
 
-  const getAverageAdultsAge = users => {
+  const getAverageAdultsAge = () => {
     const { totalAge, adults} = users
       .reduce((acc, {age}) => {
         const current = {...acc}
-        if (age > 18) {
+        if (age >= 18) {
           current.totalAge += age
           current.adults += 1
         } else {
@@ -21,10 +21,10 @@
           current.adults = 1
         }
         return current
-      }, { totalAge, adults})
+      }, { totalAge: 0, adults: 0})
       const average = totalAge / adults
       return `the average adults age is: ${average}`
   }
   
-  console.log(getAverageAdultsAge(users))
+  console.log(getAverageAdultsAge())
 })();
