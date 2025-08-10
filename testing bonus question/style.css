@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+form > label {
+    font-size: large;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#first-table, #second-table, #third-table {
+    margin-bottom: 30px;
+}

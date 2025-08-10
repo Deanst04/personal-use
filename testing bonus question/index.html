@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Mission 2: countries info tables</h1>
+    </header>
+
+    <form id="countries-form">
+        <label for="country-name">country name</label>
+        <input id="country-name" type="text" required placeholder="enter a country name" value="">
+    </form>
+
+    <div id="buttons">
+        <button class="btn btn-primary" id="search-country" type="button">search country</button>
+        <button class="btn btn-primary" id="show-all-countries" type="button">show all countries</button>
+    </div>
+
+    <div id="first-table">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Total countries</th>
+                    <th class="text-center">Total Countries Population</th>
+                    <th class="text-center">Average Population</th>
+                </tr>
+            </thead>
+            <tbody id="first-table-info">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div id="second-table">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Country Name</th>
+                    <th class="text-center">Number of citizens</th>
+                </tr>
+            </thead>
+            <tbody id="second-table-info">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div id="third-table">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">Region</th>
+                    <th class="text-center">Number of countries</th>
+                </tr>
+            </thead>
+            <tbody id="third-table-info">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div id="fourth-table">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">Currency Name</th>
+                <th class="text-center">Currency Symbol</th>
+                <th class="text-center">Countries Using Currency</th>
+            </tr>
+        </thead>
+        <tbody id="fourth-table-info">
+            
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+
+</html>
