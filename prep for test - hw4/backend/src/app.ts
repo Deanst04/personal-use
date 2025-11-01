@@ -6,6 +6,7 @@ import config from 'config'
 import sequelize from './db/sequelize';
 import cors from 'cors'
 import genreRouter from './routers/genresRouter'
+import booksRouter from './routers/booksRouter'
 
 const app = express()
 
@@ -20,6 +21,7 @@ app.use(json())
 
 // load routers
 app.use('/genres', genreRouter)
+app.use('/books', booksRouter)
 
 // not found
 app.use(notFound)
