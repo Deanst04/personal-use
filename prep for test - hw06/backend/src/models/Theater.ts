@@ -1,22 +1,22 @@
 import { AllowNull, Column, DataType, Default, HasMany, Model, PrimaryKey, Table } from "sequelize-typescript";
-import Book from "./books";
+import Movie from "./Movie";
 
 @Table({
     underscored: true
 })
-export default class Genres extends Model {
+export default class Theater extends Model {
     @PrimaryKey
     @Default(DataType.UUIDV4)
     @Column(DataType.UUID)
     id: string
 
     @AllowNull(false)
-    @Column(DataType.STRING(30))
+    @Column(DataType.STRING)
     name: string
 
-    @HasMany(() => Book, {
+    @HasMany(() => Movie, {
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
     })
-    books: Book[]
+    movies: Movie[]
 }

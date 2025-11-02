@@ -1,12 +1,12 @@
 import { Sequelize } from "sequelize-typescript";
 import config from 'config'
-import Book from "../models/books";
-import Genre from "../models/genres";
+import Theater from "../models/theater";
+import Movie from "../models/Movie";
 
 const sequelize = new Sequelize({
     ...config.get('db'), 
     dialect: 'mysql',
-    models: [Book, Genre],
+    models: [Theater, Movie],
     logging: console.log
 })
 

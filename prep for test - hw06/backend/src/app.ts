@@ -5,8 +5,8 @@ import notFound from './middlewares/not-found';
 import config from 'config'
 import sequelize from './db/sequelize';
 import cors from 'cors'
-import genreRouter from './routers/genresRouter'
-import booksRouter from './routers/booksRouter'
+import theatersRouter from './routers/theatersRouter'
+import moviesRouter from './routers/moviesRouter'
 
 const app = express()
 
@@ -20,8 +20,8 @@ app.use(cors())
 app.use(json())
 
 // load routers
-app.use('/genres', genreRouter)
-app.use('/books', booksRouter)
+app.use('/api/theaters', theatersRouter)
+app.use('api/movies', moviesRouter)
 
 // not found
 app.use(notFound)
