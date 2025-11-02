@@ -8,11 +8,11 @@ export default function Header() {
             <div>logo</div>
             <nav>
                 {/* <a href="/profile">Profile</a> | <a href="/feed">Feed</a> */}
-                <NavLink to="/books">Books</NavLink> | <NavLink to="/new-book">Add Book</NavLink>
+                <NavLink to="/movies">Movies</NavLink> | <NavLink to="/new-movie">Add Movie</NavLink>
 
             </nav>
             <div>
-                books
+                Movies
             </div>
         </div>
     )

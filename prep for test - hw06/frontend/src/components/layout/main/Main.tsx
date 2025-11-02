@@ -1,15 +1,15 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import List from "../../books/list/List";
-import New from "../../books/new/New";
 import NotFound from "../not-found/NotFound";
+import List from "../../movies/list/List";
+import New from "../../movies/new/New";
 
 export default function Main() {
     return (
         <Routes>
             {/* <Route path="/" element={<Profile />} /> */}
-            <Route path="/" element={<Navigate to="/books" />} />
-            <Route path="/books" element={<List />} />
-            <Route path="/new-book" element={<New />} />
+            <Route path="/" element={<Navigate to="/movies" />} />
+            <Route path="/movies" element={<List />} />
+            <Route path="/new-movie" element={<New />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )

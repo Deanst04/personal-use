@@ -21,7 +21,7 @@ app.use(json())
 
 // load routers
 app.use('/api/theaters', theatersRouter)
-app.use('api/movies', moviesRouter)
+app.use('/api/movies', moviesRouter)
 
 // not found
 app.use(notFound)
