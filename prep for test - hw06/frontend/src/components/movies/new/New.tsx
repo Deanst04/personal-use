@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import './New.css'
-import type Theater from '../../../models/Theater'
+import type Theater from '../../../models/theater'
 import { useNavigate } from 'react-router-dom'
 import type MovieDraft from '../../../models/movieDraft'
 import theatersServices from '../../../services/theatersServices'

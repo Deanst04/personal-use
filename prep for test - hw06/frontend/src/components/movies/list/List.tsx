@@ -1,6 +1,6 @@
 import { useEffect, useState, type ChangeEvent } from 'react'
 import './List.css'
-import type Theater from '../../../models/Theater'
+import type Theater from '../../../models/theater'
 import type Movie from '../../../models/movie'
 import theatersServices from '../../../services/theatersServices'
 import moviesServices from '../../../services/moviesServices'
